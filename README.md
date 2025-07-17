@@ -46,6 +46,7 @@
 |-----------------|---------------|----------------|---------------|
 | URL             | true          | IP             | true          |
 | Title           | true          | CNAME          | true          |
+| Copyright       | false         | ASN            | false         |
 | Status Code     | true          | Raw HTTP       | false         |
 | Content Length  | true          | HTTP2          | false         |
 | TLS Certificate | true          | HTTP Pipeline  | false         |
@@ -58,7 +59,7 @@
 | Favicon Hash    | false         | Probe  Status  | false         |
 | Body Hash       | true          | Header  Hash   | true          |
 | Redirect chain  | false         | URL Scheme     | true          |
-| JARM Hash       | false         | ASN            | false         |
+| JARM Hash       | false         |                |               |
 
 # Installation Instructions
 
@@ -112,6 +113,7 @@ PROBES:
    -lc, -line-count       display response body line count
    -wc, -word-count       display response body word count
    -title                 display page title
+   -copyright             display copyright dates and potential years
    -bp, -body-preview     display first N characters of response body (default 100)
    -server, -web-server   display server name
    -td, -tech-detect      display technology in use based on wappalyzer dataset
